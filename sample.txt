@@ -1,0 +1,7 @@
+this is the sample text
+my name is Minh
+I am 25 years old
+I am studying computer science 
+I am student at TU Darmstadt 
+This is a sample project 
+this project is built to test RAG methods
