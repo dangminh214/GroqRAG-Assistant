@@ -10,10 +10,12 @@ def load_llm_model(model: str, key: str):
         api_key=SecretStr(key)
     )
 
+    SYSTEM_PROMPT = "You are a helpful assistant that can answer questions and provide weather information."
+
     groq_agent = create_agent(
         model=groq_model, 
         tools=[get_weather],  
-        system_prompt="You are a helpful assistant that can answer questions and provide weather information.",
+        system_prompt=SYSTEM_PROMPT,
     )
 
     return groq_agent
