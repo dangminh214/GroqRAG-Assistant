@@ -56,8 +56,9 @@ def send_message_to_agent(agent, prompt: str):
     return response
 
 
-user_prompt = "what is the weather today in hanoi ?"
+user_prompt = "what is the weather today in sf ?"
 
 response = send_message_to_agent(groq_agent, prompt=user_prompt)
 
-print(response)
+# Accesss the main data
+print(response["messages"][2].content) 
