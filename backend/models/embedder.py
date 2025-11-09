@@ -1,9 +1,13 @@
+from typing import LiteralString
 from langchain_community.embeddings.spacy_embeddings import SpacyEmbeddings
 import spacy
 from nltk.stem import WordNetLemmatizer
+import nltk
+
 
 def get_embedded(texts: list[str]):
     # Load spAcy english model 
+    nltk.download("wordnet")
     nlp = spacy.load("en_core_web_md")
 
     lemmatizer = WordNetLemmatizer()

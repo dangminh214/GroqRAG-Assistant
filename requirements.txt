@@ -15,6 +15,7 @@ cymem==2.0.11
 dataclasses-json==0.6.7
 distro==1.9.0
 dotenv==0.9.9
+en_core_web_md @ https://github.com/explosion/spacy-models/releases/download/en_core_web_md-3.8.0/en_core_web_md-3.8.0-py3-none-any.whl#sha256=5e6329fe3fecedb1d1a02c3ea2172ee0fede6cea6e4aefb6a02d832dba78a310
 frozenlist==1.8.0
 greenlet==3.2.4
 groq==0.33.0
